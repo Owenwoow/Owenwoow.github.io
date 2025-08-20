@@ -1,20 +1,21 @@
 ---
-title: Markdown Extended Features
-published: 2024-05-01
-updated: 2024-11-29
-description: 'Read more about Markdown features in Fuwari'
+title: Markdown 扩展功能
+published: 2025-08-20
+update: 
+description: 阅读有关 Fuwari 中 Markdown 功能的更多信息.
 image: ''
-tags: [Demo, Example, Markdown, Fuwari]
-category: 'Examples'
+tags: [Markdown, Fuwari]
+category: '示例'
 draft: false 
 ---
 
-## GitHub Repository Cards
-You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API. 
+## GitHub 存储库卡片
 
-::github{repo="Fabrizz/MMM-OnSpotify"}
+您可以添加链接到 GitHub 存储库的动态卡片，在页面加载时，存储库信息将从 GitHub API 中提取。
 
-Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
+::github{repo="saicaca/fuwari"}
+
+使用代码创建 GitHub 存储库卡片 `::github{repo="<owner>/<repo>"}`.
 
 ```markdown
 ::github{repo="saicaca/fuwari"}
@@ -22,10 +23,11 @@ Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
 
 ## Admonitions
 
-Following types of admonitions are supported: `note` `tip` `important` `warning` `caution`
+支持以下类型的警告：  `note/注意` `tip/提示` `important/重要` `warning/警告` `caution/谨慎`
 
 :::note
 Highlights information that users should take into account, even when skimming.
+
 :::
 
 :::tip
@@ -44,7 +46,7 @@ Critical content demanding immediate user attention due to potential risks.
 Negative potential consequences of an action.
 :::
 
-### Basic Syntax
+### 基本语法
 
 ```markdown
 :::note
@@ -56,24 +58,24 @@ Optional information to help a user be more successful.
 :::
 ```
 
-### Custom Titles
+### 自定义标题
 
-The title of the admonition can be customized.
+告诫的标题可以自定义。
 
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
+:::note[我的自定义标题]
+这是带有自定义标题的注释。
 :::
 
 ```markdown
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
+:::note[我的自定义标题]
+这是带有自定义标题的注释。
 :::
 ```
 
-### GitHub Syntax
+### GitHub 语法
 
 > [!TIP]
-> [The GitHub syntax](https://github.com/orgs/community/discussions/16925) is also supported.
+> [GitHub 语法](https://github.com/orgs/community/discussions/16925)也受支持。
 
 ```
 > [!NOTE]
