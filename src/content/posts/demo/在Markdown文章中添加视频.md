@@ -2,7 +2,7 @@
 title: 在Markdown文章中添加视频
 published: 2025-08-20
 description: 本文演示了如何在博客文章中添加嵌入视频。
-tags: [Markdown, Blog]
+tags: [Markdown]
 category: 示例
 draft: false
 ---
