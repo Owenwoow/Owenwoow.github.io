@@ -1,5 +1,6 @@
 ---
 import path from "node:path";
+import Giscus from "@components/misc/Giscus.astro";
 import License from "@components/misc/License.astro";
 import Markdown from "@components/misc/Markdown.astro";
 import I18nKey from "@i18n/i18nKey";
@@ -142,7 +143,8 @@ const jsonLd = {
         </a>
     </div>
 
-
+    <!-- Giscus 评论系统 -->
+    <Giscus />
 
     <script src="//api.busuanzi.cc/static/3.6.9/busuanzi.min.js" defer></script>
 </MainGridLayout>

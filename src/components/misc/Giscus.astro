@@ -1,0 +1,50 @@
+---
+// Giscus 评论组件
+// 基于 GitHub Discussions 的评论系统
+---
+
+<div id="giscus-container" class="mt-8">
+  <!-- Giscus 评论将在这里加载 -->
+</div>
+
+<script>
+  // 动态加载 Giscus 脚本
+  function loadGiscus() {
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.setAttribute('data-repo', 'Owenwoow/Owenwoow.github.io');
+    script.setAttribute('data-repo-id', 'R_kgDOPgbZSw');
+    script.setAttribute('data-category', 'Announcements');
+    script.setAttribute('data-category-id', 'DIC_kwDOPgbZS84Cug06');
+    script.setAttribute('data-mapping', 'title');
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', 'bottom');
+    script.setAttribute('data-theme', 'preferred_color_scheme');
+    script.setAttribute('data-lang', 'zh-CN');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+    
+    // 将脚本添加到容器中
+    const container = document.getElementById('giscus-container');
+    if (container) {
+      container.appendChild(script);
+    }
+  }
+
+  // 页面加载完成后初始化 Giscus
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadGiscus);
+  } else {
+    loadGiscus();
+  }
+
+  // 如果使用 Swup 进行页面切换，需要在页面切换后重新初始化
+  if (window.swup) {
+    window.swup.hooks.on('page:view', () => {
+      // 延迟一点时间确保 DOM 完全加载
+      setTimeout(loadGiscus, 100);
+    });
+  }
+</script>
