@@ -3,8 +3,8 @@ title: Cudy_tr3000 刷机教程
 published: 2025-10-02
 description: 'Cudy TR3000 便携式路由器刷入 ImmortalWrt 大功率固件的详细图文教程。'
 image: ''
-tags: [Cudy TR3000, 刷机, OpenWrt, 路由器, 教程]
-category: '教程'
+tags: [Cudy TR3000, 刷机, OpenWrt, 路由器, 教程, 记录]
+category: '折腾记录'
 draft: false 
 lang: ''
 ---
