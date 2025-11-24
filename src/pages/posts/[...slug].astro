@@ -68,13 +68,6 @@ const jsonLd = {
                         {remarkPluginFrontmatter.minutes} {" " + i18n(remarkPluginFrontmatter.minutes === 1 ? I18nKey.minuteCount : I18nKey.minutesCount)}
                     </div>
                 </div>
-                <!-- 新增阅读量统计 -->
-                <div class="flex flex-row items-center">
-                    <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2">
-                        <Icon name="material-symbols:visibility-outline-rounded"></Icon>
-                    </div>
-                    <span class="text-sm"><span id="busuanzi_page_pv">加载中...</span> 次</span>
-                </div>
             </div>
 
 
@@ -145,6 +138,4 @@ const jsonLd = {
 
     <!-- Giscus 评论系统 -->
     <Giscus />
-
-    <script src="//api.busuanzi.cc/static/3.6.9/busuanzi.min.js" defer></script>
 </MainGridLayout>
