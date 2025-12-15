@@ -3,7 +3,7 @@ title: 记一次bat脚本撰写：方便的替换艾尔登法环反作弊文件
 published: 2025-10-26
 description: '记录了为了解决艾尔登法环（Elden Ring）频繁切换反作弊文件（小蓝熊）以实现作弊与联机功能切换的问题，撰写bat脚本的完整过程，以及过程中遇到的括号闭合陷阱。'
 image: ''
-tags: ["bat", "记录", "脚本开发", "艾尔登法环"]
+tags: ["bat", "记录", "脚本开发"]
 category: '技术笔记'
 draft: false 
 lang: 'zh-CN'
