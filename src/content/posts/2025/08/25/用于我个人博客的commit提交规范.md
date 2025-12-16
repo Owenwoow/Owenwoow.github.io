@@ -3,7 +3,7 @@ title: 用于我个人博客的commit提交规范
 published: 2025-08-25
 description: '探讨在个人博客开发与维护中如何制定和应用 Commit 提交规范，以保持提交历史清晰、可追踪。'
 image: ''
-tags: ['commit规范', 'GIt']
+tags: ['commit规范', 'Git']
 category: '记录'
 draft: false 
 lang: ''
